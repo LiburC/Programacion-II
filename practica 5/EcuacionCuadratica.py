@@ -5,25 +5,25 @@ class EcuacionCuadratica:
         self.b = b
         self.c = c
     
-    def get_discriminante(self):
+    def get_Discriminante(self):
         return self.b ** 2 - 4 * self.a * self.c
     
-    def get_raiz1(self):
-        if self.get_discriminante() >= 0:
-            return (-self.b + math.sqrt(self.get_discriminante())) / (2 * self.a)
+    def get_Raiz1(self):
+        if self.get_Discriminante() >= 0:
+            return (-self.b + math.sqrt(self.get_Discriminante())) / (2 * self.a)
         return None
     
-    def get_raiz2(self):
-        if self.get_discriminante() > 0:
-            return (-self.b - math.sqrt(self.get_discriminante())) / (2 * self.a)
+    def get_Raiz2(self):
+        if self.get_Discriminante() > 0:
+            return (-self.b - math.sqrt(self.get_Discriminante())) / (2 * self.a)
         return None
 
     def respuesta(self):
-        discriminante = self.get_discriminante()
+        discriminante = self.get_Discriminante()
         if discriminante > 0:
-            print(f"La ecuación tiene dos raíces {self.get_raiz1():.5f} y {self.get_raiz2():.5f}")
+            print(f"La ecuación tiene dos raíces {self.get_Raiz1():.5f} y {self.get_Raiz2():.5f}")
         elif discriminante == 0:
-            print(f"La ecuación tiene una raíz {self.get_raiz1():.5f}")
+            print(f"La ecuación tiene una raíz {self.get_Raiz1():.5f}")
         else:
             print("La ecuación no tiene raíces reales")
             
