@@ -1,4 +1,4 @@
-package Juego1;
+package Practica7;
 import java.util.Random;
 import java.util.Scanner;
 
