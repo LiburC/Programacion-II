@@ -1,4 +1,4 @@
-package Juego1;
+package Practica7;
 
 public class Juego {
     protected int numeroDeVidas;
